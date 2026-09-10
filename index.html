@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrouk Fashion</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf8;
+      color: #2b2220;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 20px;
+      background:
+        linear-gradient(rgba(255,250,248,.72), rgba(255,250,248,.72)),
+        url("image1.jpg") center/cover;
+    }
+
+    .hero {
+      max-width: 700px;
+      padding: 40px 25px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 1.8;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #2b2220;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      margin: 7px;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      font-size: 19px;
+      line-height: 2;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.12);
+    }
+
+    .contact {
+      background: #f1e5df;
+      border-radius: 25px;
+      margin-bottom: 40px;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #2b2220;
+      color: white;
+    }
+
+    @media(max-width:600px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
+
+      .gallery img {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+
+      <!-- ضعي اسم صورة اللوجو هنا -->
+      <img src="logo.png" class="logo" alt="Shrouk Fashion">
+
+      <h1>Shrouk Fashion</h1>
+
+      <p class="subtitle">
+        تصميمات أزياء أنيقة ومميزة<br>
+        لأن إطلالتك تستحق تكون مختلفة ✨
+      </p>
+
+      <a class="btn whatsapp"
+         href="https://wa.me/201030825745"
+         target="_blank">
+        تواصلي معنا على واتساب
+      </a>
+
+      <a class="btn" href="#gallery">
+        شوفي التصميمات
+      </a>
+
+    </div>
+  </header>
+
+  <section>
+    <h2>عن Shrouk Fashion</h2>
+
+    <p class="about">
+      بنقدم تصميمات أزياء مميزة بعناية واهتمام بكل تفصيلة،
+      علشان نساعدك تختاري الإطلالة اللي تناسبك وتعبّر عنك.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>أحدث التصميمات ✨</h2>
+
+    <div class="gallery">
+      <img src="image1.jpg" alt="تصميم">
+      <img src="image2.jpg" alt="تصميم">
+      <img src="image3.jpg" alt="تصميم">
+      <img src="image4.jpg" alt="تصميم">
+      <img src="image5.jpg" alt="تصميم">
+      <img src="image6.jpg" alt="تصميم">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>اطلبي تصميمك 💕</h2>
+
+    <p class="about">
+      للاستفسار أو الطلب تواصلي معنا مباشرة على واتساب
+    </p>
+
+    <br>
+
+    <a class="btn whatsapp"
+       href="https://wa.me/201030825745"
+       target="_blank">
+      💬 واتساب
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Shrouk Fashion — جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
